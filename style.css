@@ -1,10 +1,188 @@
-.bottons {
-    background-color: blueviolet;
-    color: cornsilk;
-    font-size: 30px;
+/* Fonte estilo anime */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Configurações básicas */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D1B2A; /* Azul escuro */
+    color: #D3D3D3; /* Cinza claro */
+    font-family: 'Bangers', cursive;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.body{
-    background-color: darkblue;
-    color: darkgrey;
+/* Header */
+header {
+    padding: 20px;
+    background-color: #0D1B2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    background-color: #6A0DAD; /* Violeta */
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #8E2FE3; /* Tom mais claro no hover */
+}
+
+/* Acessibilidade - Botões */
+.accessibility-controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.accessibility-controls button {
+    padding: 8px 12px;
+    background-color: #6A0DAD;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.accessibility-controls button:hover {
+    background-color: #8E2FE3;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p, section li {
+    font-size: 1.2rem;
+}
+
+/* Imagens */
+section img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Bangers', cursive;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #8E2FE3;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0D1B2A;
+    font-size: 1rem;
+}
+
+/* Modo Alto Contraste */
+body.high-contrast {
+    background-color: #000000;
+    color: #00BFFF;
+}
+
+body.high-contrast header, 
+body.high-contrast footer {
+    background-color: #000000;
+}
+
+body.high-contrast nav a, 
+body.high-contrast .accessibility-controls button,
+body.high-contrast form button {
+    background-color: #00BFFF;
+    color: #000000;
+}
+
+body.high-contrast nav a:hover,
+body.high-contrast .accessibility-controls button:hover,
+body.high-contrast form button:hover {
+    background-color: #1E90FF;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .accessibility-controls {
+        flex-direction: column;
+    }
 }
