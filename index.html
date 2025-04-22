@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling - Fã Site</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ícones -->
+    <link href="https://unpkg.com/lucide@latest/dist/lu.min.css" rel="stylesheet">
+    
+    <!-- AOS (Animação ao rolar) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Solo Leveling</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sinopse">Sinopse</a></li>
+                <li><a href="#informacoes">Informações</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="accessibility-controls">
+            <button id="toggle-contrast">
+                <i data-lucide="eye-off"></i> Alto Contraste
+            </button>
+            <button id="increase-font">
+                <i data-lucide="zoom-in"></i> A+
+            </button>
+            <button id="decrease-font">
+                <i data-lucide="zoom-out"></i> A-
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" data-aos="fade-up">
+            <h2>Sobre o Anime</h2>
+            <p>"Solo Leveling" é baseado em uma popular novel sul-coreana escrita por Chugong, adaptada em manhwa e anime. A história acompanha Sung Jin-Woo em sua jornada de caçador mais fraco ao mais poderoso.</p>
+            <img src="https://images6.alphacoders.com/132/1323692.jpeg" alt="Poster oficial de Solo Leveling com Sung Jin-Woo e sombras ao fundo.">
+        </section>
+
+        <section id="sinopse" data-aos="fade-up" data-aos-delay="100">
+            <h2>Sinopse</h2>
+            <p>Sung Jin-Woo, um caçador de Rank E, luta diariamente para sobreviver até encontrar uma misteriosa missão que lhe concede um poder inédito: a habilidade de subir de nível sem limites.</p>
+            <img src="https://images8.alphacoders.com/132/1323691.jpeg" alt="Imagem de Sung Jin-Woo em meio a uma batalha.">
+        </section>
+
+        <section id="informacoes" data-aos="fade-up" data-aos-delay="200">
+            <h2>Principais Informações</h2>
+            <ul>
+                <li>Autor: Chugong</li>
+                <li>Diretor do anime: Shunsuke Nakashige</li>
+                <li>Estúdio: A-1 Pictures</li>
+                <li>Gêneros: Ação, Fantasia, RPG</li>
+                <li>Estreia do anime: 2024</li>
+            </ul>
+            <img src="https://images2.alphacoders.com/132/1323693.jpeg" alt="Cena de ação de Solo Leveling com Jin-Woo invocando sombras.">
+        </section>
+
+        <section id="curiosidades" data-aos="fade-up" data-aos-delay="300">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>O manhwa ficou em primeiro lugar em diversas premiações na Coreia.</li>
+                <li>O autor planejava inicialmente matar Jin-Woo, mas mudou de ideia por popularidade.</li>
+                <li>A trilha sonora do anime foi composta por Hiroyuki Sawano, famoso por Attack on Titan.</li>
+            </ul>
+        </section>
+
+        <section id="contato" data-aos="fade-up" data-aos-delay="400">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Solo Leveling Fã Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Scripts de bibliotecas -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
