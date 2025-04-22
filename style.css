@@ -1,8 +1,8 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: midnightblue;
+    color: #ccc;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
@@ -11,8 +11,8 @@ body {
 }
 
 header {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: midnightblue;
+    color: #ccc;
     padding: 20px;
     text-align: center;
 }
@@ -28,7 +28,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -71,12 +71,12 @@ section {
 }
 
 section img {
-    width: 100%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 200px;
     height: auto;
     margin-top: 15px;
     border-radius: 12px;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -96,7 +96,7 @@ form textarea {
 }
 
 form button[type="submit"] {
-    background-color: #28a745;
+    background-color: blue;
     color: #ffffff;
     border: none;
     padding: 10px;
@@ -108,11 +108,11 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover,
 form button[type="submit"]:focus {
-    background-color: #218838;
+    background-color: blue;
 }
 
 footer {
-    background-color: #000000;
+    background-color: #411081;
     color: #ffffff;
     text-align: center;
     padding: 15px;
@@ -121,22 +121,22 @@ footer {
 
 /* Alto contraste */
 .high-contrast {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #7f73eb;
+    color: #000000;
 }
 
 .high-contrast header,
 .high-contrast footer {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #5a01c0;
+    color: #ebebeb;
 }
 
 .high-contrast nav ul li a {
-    color: #000000;
+    color: #4c247a;
 }
 
 .high-contrast .accessibility-controls button {
-    background-color: #000000;
+    background-color: #2d1657;
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -146,7 +146,7 @@ button:focus,
 a:focus,
 input:focus,
 textarea:focus {
-    outline: 3px solid #ffcc00;
+    outline: 3px solid #b399cf;
     outline-offset: 3px;
 }
 
